@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    tools:context=".GameScreen">
+
+    <LinearLayout
+        android:id="@+id/game_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margine_top" >
+
+            <ImageView
+                android:id="@+id/time_bar_image"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/clock_margin_right"
+                android:src="@drawable/time_bar" />
+
+            <TextView
+                android:id="@+id/time_bar_text"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/clock_text_margin_right"
+                android:gravity="center"
+                android:shadowColor="#2eaed9"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="00:60"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/clock_text_size" />
+
+            <TextView
+                android:id="@+id/playerNameText"
+                android:layout_toRightOf="@id/time_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:shadowColor="#2eaed9"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Name: Dan"
+
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/age_text"
+                android:layout_below="@id/playerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:shadowColor="#2eaed9"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Age: 70"
+
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/activity_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/verticalLinearLayout">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/popup_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+</FrameLayout>

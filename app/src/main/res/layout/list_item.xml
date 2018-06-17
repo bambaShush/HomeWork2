@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="2dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:text="Player Name:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pNameText"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:text="txt"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/pNameText"
+        android:text="Score:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/scoreText"
+        android:layout_below="@id/pNameText"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:text="txt"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/scoreText"
+        android:text="Location:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/scoreText"
+
+        android:layout_below="@id/score"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:text="txt"
+        android:textSize="15sp" />
+
+</RelativeLayout>

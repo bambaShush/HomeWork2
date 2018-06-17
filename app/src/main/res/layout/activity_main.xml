@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+         />
+
+
+    <EditText
+        android:text=""
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:hint="Enter name"/>
+    
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playerName"
+        android:textSize="20dp"
+        android:hint="Enter age"/>
+
+    <Button
+        android:layout_below="@id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START PLAYING"
+        android:id="@+id/btnStartPlaying" />
+    <Button
+        android:layout_below="@id/btnStartPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO TO LEADERBOARD"
+        android:id="@+id/btnLeaderBoard" />
+
+
+
+
+</RelativeLayout>
